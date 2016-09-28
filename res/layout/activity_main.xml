@@ -96,7 +96,7 @@
         android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:onClick=""/>
+        android:onClick="ejecutar_mapa"/>
 
 
 </RelativeLayout>
