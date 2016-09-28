@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Práctica maps API</string>
+    <string name="title_activity_maps">Localización</string>
+    <string name="name">Nombre</string>
+    <string name="login_name">Nombre</string>
+    <string name="login_pass">Contraseña</string>
+    <string name="button">Entrar</string>
+    <string name="title_activity_clase_mapa">Mapa</string>
+</resources>
