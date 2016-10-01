@@ -5,5 +5,13 @@
     <string name="login_name">Nombre</string>
     <string name="login_pass">Contraseña</string>
     <string name="button">Entrar</string>
+    <string name="button2">Info</string>
     <string name="title_activity_clase_mapa">Mapa</string>
+    <string name="title_activity_maps_juan">Map</string>
+    <string name="title_activity_maps_maria">Map</string>
+    <string name="explicacion">\n\n
+       La presente aplicación cuenta con 5 activities que se corresponden con una principal (main),
+        tres asociadas al posicionamiento en Google maps API v2 de la ciudad de origen/vivienda de
+        dos alumnos y el profesor de la asignatura, y una útlima actividad que da información sobre
+        la aplicación.</string>
 </resources>

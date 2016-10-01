@@ -7,22 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/uem"
     tools:context="com.carprisa.login_mapas.MainActivity">
-
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentStart="true"
-        android:gravity="top"
-        android:layout_above="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:weightSum="1"
-        android:paddingTop="0dp">
-
-    </LinearLayout>
 
 
     <TextView
@@ -35,7 +21,7 @@
         android:layout_alignStart="@+id/editText"
         android:layout_marginBottom="43dp"
         android:textSize="20dp"
-        android:textColor="#811111" />
+        android:textColor="@color/bright_foreground_material_dark" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -49,20 +35,22 @@
         android:inputType="textPersonName|textAutoCorrect"
         android:typeface="normal"
         android:visibility="visible"
-        android:hint="Introduzca su nombre" />
+        android:hint="Introduzca su nombre"
+        android:background="@color/bright_foreground_inverse_material_light" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login_pass"
         android:id="@+id/textView2"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2"
         android:textSize="20dp"
-        android:textColor="#6e1414"
+        android:textColor="@color/bright_foreground_material_dark"
         android:textIsSelectable="false"
-        android:typeface="normal" />
+        android:typeface="normal"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="46dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -75,18 +63,8 @@
         android:hint="Introduzca contraseña"
         android:layout_alignRight="@+id/editText"
         android:layout_alignEnd="@+id/editText"
-        android:inputType="textPassword" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@mipmap/ic_launcher"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
+        android:inputType="textPassword"
+        android:background="@color/bright_foreground_material_dark" />
 
     <Button
         android:layout_width="wrap_content"
@@ -96,7 +74,41 @@
         android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:onClick="ejecutar_mapa"/>
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/mensaje"
+        android:textColor="#0707f4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginBottom="71dp"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[Usuarios: maria, juan y carlos]"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/material_deep_teal_200" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button2"
+        android:id="@+id/button2"
+        android:onClick="muestraInfo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>

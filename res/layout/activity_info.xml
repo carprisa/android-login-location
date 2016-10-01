@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Base.Theme.AppCompat.Light.Dialog.Alert"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SOBRE LA APP"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="\n
+        Desarrollador: Carlos Prieto\n
+        Contacto: carlosprieto@gmail.com\n
+        Versión: 0.1\n
+        Fecha: Septiembre-2016"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="156dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/explicacion"
+        android:id="@+id/explicacion"
+        android:gravity="bottom"
+        android:layout_weight="0.56"
+        android:layout_gravity="center_horizontal" />
+
+
+
+</LinearLayout>
